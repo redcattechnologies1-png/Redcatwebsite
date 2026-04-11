@@ -1,0 +1,27 @@
+{
+  "name": "redcat-technology-website",
+  "version": "1.0.0",
+  "description": "Redcat Technology Product Pvt. Ltd. - Premium innovation partner for your business",
+  "private": true,
+  "scripts": {
+    "build": "esbuild speed-insights.js --bundle --format=iife --outfile=speed-insights-bundle.js --minify",
+    "dev": "npx serve .",
+    "lint": "echo 'No linting configured'",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "redcat",
+    "technology",
+    "refurbished",
+    "mobiles"
+  ],
+  "author": "Redcat Technology Product Pvt. Ltd.",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "serve": "^14.2.1"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}
