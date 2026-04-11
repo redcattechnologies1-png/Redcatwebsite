@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Redcat Technology Product Pvt. Ltd. — Premium innovation partner for your business. Explore our cutting-edge products and solutions, including Safe uR Fin.">
+    <title>Redcat Technology Product Pvt. Ltd. — We Care Your Business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== PAGE LOADER ===== -->
+    <div class="loader" id="loader">
+        <div class="loader__content">
+            <div class="loader__logo" style="width: 250px; height: 80px; position: relative; overflow: hidden;">
+                <img src="images/logo.png" alt="Red Cat Technology"
+                    style="position: absolute; top: 50%; left: 50%; height: 500px; width: auto; max-width: none; transform: translate(-50%, -50%); filter: drop-shadow(0 0 10px rgba(200,0,0,0.5));">
+            </div>
+            <div class="loader__bar">
+                <div class="loader__progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo" id="nav-logo"
+                style="width: 220px; height: 45px; position: relative; overflow: hidden; display: block; margin: 0;">
+                <img src="images/logo.png" alt="Red Cat Technology"
+                    style="position: absolute; top: 50%; left: 50%; height: 500px; width: auto; max-width: none; transform: translate(-50%, -50%);">
+            </a>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="#home" class="nav__link active" id="nav-home">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link" id="nav-about">About</a></li>
+                <li class="nav__item"><a href="about.html#management" class="nav__link">Management</a></li>
+                <li class="nav__item"><a href="#products" class="nav__link" id="nav-products">Products</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link nav__link--cta" id="nav-contact">Contact
+                        Us</a></li>
+            </ul>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home"
+        style="padding-top: calc(var(--header-height) + 1.5rem); padding-bottom: 2rem; background: #fff; min-height: auto; display: flex; align-items: center; justify-content: center;">
+        <div class="container" style="max-width: 1300px; width: 100%;">
+            <div class="hero__banner-wrapper animate-reveal"
+                style="--delay: 0.1s; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12); border: 1px solid rgba(0,0,0,0.03); background: #000;">
+                <div class="hero-slider" id="hero-slider">
+                    <div class="hero-slider__track" id="hero-slider-track">
+                        <div class="hero-slider__slide">
+                            <img src="images/hero-banner.png" alt="Red Cat Product - We Care Your Business">
+                        </div>
+                        <div class="hero-slider__slide">
+                            <img src="images/1.png" alt="Slide 1" loading="lazy">
+                        </div>
+                        <div class="hero-slider__slide">
+                            <img src="images/2.png" alt="Slide 2" loading="lazy">
+                        </div>
+                        <div class="hero-slider__slide">
+                            <img src="images/3.png" alt="Slide 3" loading="lazy">
+                        </div>
+                        <div class="hero-slider__slide">
+                            <img src="images/4.png" alt="Slide 4" loading="lazy">
+                        </div>
+                        <div class="hero-slider__slide">
+                            <img src="images/5.png" alt="Slide 5" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Slider Navigation -->
+                    <button class="hero-slider__btn hero-slider__btn--prev" id="hero-prev" aria-label="Previous Slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="hero-slider__btn hero-slider__btn--next" id="hero-next" aria-label="Next Slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero__actions animate-reveal"
+                style="--delay: 0.3s; display: flex; justify-content: center; gap: 1.5rem; margin-top: 2.5rem;">
+                <a href="#products" class="btn btn--primary btn--lg" id="cta-explore"
+                    style="padding: 1.25rem 2.5rem; font-size: 1.1rem; box-shadow: 0 10px 25px rgba(220, 0, 0, 0.25);">
+                    <span>Explore Products</span>
+                    <svg width="22" height="22" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="about.html" class="btn btn--ghost btn--lg" id="cta-learn"
+                    style="padding: 1.25rem 2.5rem; font-size: 1.1rem; border: 2px solid var(--gray-200);">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about">
+        <!-- Floating background blobs -->
+        <div class="about__blob about__blob--1"></div>
+        <div class="about__blob about__blob--2"></div>
+        <div class="about__blob about__blob--3"></div>
+
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header animate-reveal" style="--delay: 0s">
+                <span class="section__tag">About Us</span>
+                <h2 class="section-header__title">Driven by Innovation,<br><span class="gradient-text">Powered by
+                        Trust</span></h2>
+                <div class="section-header__line"></div>
+                <p class="section-header__desc" style="margin-bottom: 24px;">At RedCat Technology Product, We're
+                    reshaping the tech landscape with premium refurbished products and cutting-edge accessories that
+                    deliver exceptional value.</p>
+                <a href="about.html" class="btn btn--primary">About Our Company</a>
+            </div>
+
+            <!-- Card Carousel -->
+            <div class="about-carousel animate-reveal" style="--delay: 0.2s">
+                <div class="about-carousel__track" id="about-carousel-track">
+
+                    <!-- Card 1: Our Vision -->
+                    <div class="about-card" data-card="0">
+                        <div class="about-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" stroke="url(#acg1)" stroke-width="2" />
+                                <path d="M24 14v10l7 7" stroke="url(#acg1)" stroke-width="2.5" stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="acg1" x1="4" y1="4" x2="44" y2="44">
+                                        <stop stop-color="#cc0000" />
+                                        <stop offset="1" stop-color="#ff6464" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="about-card__title">Our Vision</h3>
+                        <p class="about-card__desc">To become India's most trusted destination for premium tech
+                            products.</p>
+                        <p class="about-card__detail">We envision a future where quality technology is accessible to
+                            everyone. By offering certified refurbished devices and premium accessories, we bridge the
+                            gap between aspiration and affordability — empowering millions to stay connected,
+                            productive, and entertained without compromise.</p>
+                        <span class="about-card__expand-hint">Click to explore →</span>
+                    </div>
+
+                    <!-- Card 2: Our Mission -->
+                    <div class="about-card" data-card="1">
+                        <div class="about-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4L6 14v20l18 10 18-10V14L24 4z" stroke="url(#acg2)" stroke-width="2" />
+                                <path d="M24 24L6 14M24 24v20M24 24l18-10" stroke="url(#acg2)" stroke-width="1.5" />
+                                <defs>
+                                    <linearGradient id="acg2" x1="6" y1="4" x2="42" y2="44">
+                                        <stop stop-color="#cc0000" />
+                                        <stop offset="1" stop-color="#ff6464" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="about-card__title">Our Mission</h3>
+                        <p class="about-card__desc">Delivering premium quality at honest prices with unmatched customer
+                            care.</p>
+                        <p class="about-card__detail">Every product we sell undergoes rigorous 42-point quality checks.
+                            Our mission is simple: provide devices that look, feel, and perform like new — backed by
+                            comprehensive warranties and a customer support team that truly cares. We believe great
+                            technology shouldn't be a luxury.</p>
+                        <span class="about-card__expand-hint">Click to explore →</span>
+                    </div>
+
+                    <!-- Card 3: Quality First -->
+                    <div class="about-card" data-card="2">
+                        <div class="about-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4l6 12h13l-10.5 8 4 13L24 29l-12.5 8 4-13L5 16h13L24 4z"
+                                    stroke="url(#acg3)" stroke-width="2" />
+                                <defs>
+                                    <linearGradient id="acg3" x1="5" y1="4" x2="43" y2="44">
+                                        <stop stop-color="#cc0000" />
+                                        <stop offset="1" stop-color="#ff6464" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="about-card__title">Quality First</h3>
+                        <p class="about-card__desc">42-point quality checks on every single product we deliver.</p>
+                        <p class="about-card__detail">Our dedicated quality assurance team inspects every device across
+                            42 critical parameters — from display clarity and battery health to speaker performance and
+                            button responsiveness. Only products scoring 95%+ pass our standards, ensuring you receive
+                            nothing but the best.</p>
+                        <span class="about-card__expand-hint">Click to explore →</span>
+                    </div>
+
+                    <!-- Card 4: Customer Love -->
+                    <div class="about-card" data-card="3">
+                        <div class="about-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 42S6 30 6 18a10 10 0 0118-6 10 10 0 0118 6c0 12-18 24-18 24z"
+                                    stroke="url(#acg4)" stroke-width="2" />
+                                <defs>
+                                    <linearGradient id="acg4" x1="6" y1="6" x2="42" y2="42">
+                                        <stop stop-color="#cc0000" />
+                                        <stop offset="1" stop-color="#ff6464" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="about-card__title">Customer Love</h3>
+                        <p class="about-card__desc">98% satisfaction rate with 24/7 dedicated support across channels.
+                        </p>
+                        <p class="about-card__detail">Our customers are at the heart of everything we do. With a
+                            dedicated support team available round the clock via chat, email, and phone, we ensure every
+                            query is resolved within 2 hours. Our 98% satisfaction rate isn't just a number — it's a
+                            promise we renew every single day.</p>
+                        <span class="about-card__expand-hint">Click to explore →</span>
+                    </div>
+
+                    <!-- Card 5: Sustainability -->
+                    <div class="about-card" data-card="4">
+                        <div class="about-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 44c0-16 14-20 14-30a14 14 0 00-28 0c0 10 14 14 14 30z" stroke="url(#acg5)"
+                                    stroke-width="2" />
+                                <path d="M24 28v-10M20 22l4-4 4 4" stroke="url(#acg5)" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="acg5" x1="10" y1="4" x2="38" y2="44">
+                                        <stop stop-color="#cc0000" />
+                                        <stop offset="1" stop-color="#ff6464" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="about-card__title">Sustainability</h3>
+                        <p class="about-card__desc">Reducing e-waste through certified refurbishment and responsible
+                            recycling.</p>
+                        <p class="about-card__detail">Every refurbished device we sell is one less device in a landfill.
+                            Our comprehensive refurbishment process extends product lifecycles by 3-5 years, reducing
+                            electronic waste and the carbon footprint of manufacturing. Join us in building a greener,
+                            more sustainable tech ecosystem.</p>
+                        <span class="about-card__expand-hint">Click to explore →</span>
+                    </div>
+
+                    <!-- Card 6: Innovation -->
+                    <div class="about-card" data-card="5">
+                        <div class="about-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <rect x="8" y="8" width="32" height="32" rx="6" stroke="url(#acg6)" stroke-width="2" />
+                                <path d="M18 24h12M24 18v12" stroke="url(#acg6)" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="acg6" x1="8" y1="8" x2="40" y2="40">
+                                        <stop stop-color="#cc0000" />
+                                        <stop offset="1" stop-color="#ff6464" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="about-card__title">Innovation</h3>
+                        <p class="about-card__desc">Constantly evolving our processes with the latest technology
+                            standards.</p>
+                        <p class="about-card__detail">We invest heavily in R&D to stay ahead of industry trends. From
+                            AI-powered diagnostics in our quality checks to blockchain-verified product histories, we
+                            leverage cutting-edge technology to ensure transparency, trust, and an unparalleled shopping
+                            experience for our customers.</p>
+                        <span class="about-card__expand-hint">Click to explore →</span>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Navigation -->
+                <div class="about-carousel__nav">
+                    <button class="about-carousel__btn about-carousel__btn--prev" id="about-prev"
+                        aria-label="Previous cards">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="about-carousel__progress">
+                        <div class="about-carousel__progress-bar" id="about-progress-bar"></div>
+                    </div>
+                    <button class="about-carousel__btn about-carousel__btn--next" id="about-next"
+                        aria-label="Next cards">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expanded Card Modal / Overlay -->
+        <div class="about-modal" id="about-modal">
+            <div class="about-modal__backdrop" id="about-modal-backdrop"></div>
+            <div class="about-modal__container" id="about-modal-container">
+                <button class="about-modal__close" id="about-modal-close" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="about-modal__content" id="about-modal-content">
+                    <div class="about-modal__icon" id="modal-icon"></div>
+                    <h3 class="about-modal__title" id="modal-title"></h3>
+                    <p class="about-modal__desc" id="modal-desc"></p>
+                    <p class="about-modal__detail" id="modal-detail"></p>
+                </div>
+                <div class="about-modal__nav">
+                    <button class="about-modal__nav-btn" id="modal-prev" aria-label="Previous">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <span>Prev</span>
+                    </button>
+                    <span class="about-modal__counter" id="modal-counter">1 / 6</span>
+                    <button class="about-modal__nav-btn" id="modal-next" aria-label="Next">
+                        <span>Next</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS SECTION (CAROUSEL) ===== -->
+    <section class="section section--alt" id="products">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header animate-reveal" style="--delay: 0s">
+                <span class="section__tag">Our Products</span>
+                <h2 class="section-header__title">Premium Products &<br><span class="gradient-text">Quality
+                        Services</span></h2>
+                <div class="section-header__line"></div>
+                <p class="section-header__desc">Discover our curated collection of premium tech products, each backed by
+                    our quality guarantee.</p>
+            </div>
+
+            <!-- Homepage Product Carousel -->
+            <div class="homepage-products-carousel animate-reveal" style="--delay: 0.2s" id="hp-carousel">
+                <div class="hp-carousel__track" id="hp-carousel-track">
+                    <!-- Slide: Safe uR Fin -->
+                    <div class="hp-carousel__slide carousel__slide--logo">
+                        <img src="images/safe-ur-fin-logo.png" alt="Safe uR Fin" class="hp-carousel__img">
+                        <h3 class="hp-carousel__title">Safe uR Fin</h3>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="hp-carousel__slide">
+                        <img src="images/refurbished-mobiles.png" alt="Mobiles" class="hp-carousel__img">
+                        <h3 class="hp-carousel__title">Refurbished Mobiles</h3>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="hp-carousel__slide">
+                        <img src="images/earbuds.png" alt="Earbuds" class="hp-carousel__img">
+                        <h3 class="hp-carousel__title">Earbuds</h3>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="hp-carousel__slide">
+                        <img src="images/headphones.png" alt="Headphones" class="hp-carousel__img">
+                        <h3 class="hp-carousel__title">Headphones</h3>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="hp-carousel__slide">
+                        <img src="images/speakers.png" alt="Speakers" class="hp-carousel__img">
+                        <h3 class="hp-carousel__title">Speakers</h3>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="hp-carousel__slide">
+                        <img src="images/smart-watches.png" alt="Smart Watches" class="hp-carousel__img">
+                        <h3 class="hp-carousel__title">Smart Watches</h3>
+                    </div>
+                </div>
+
+                <!-- Nav -->
+                <button class="hp-carousel__btn hp-carousel__btn--prev" id="hp-prev" aria-label="Previous">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="hp-carousel__btn hp-carousel__btn--next" id="hp-next" aria-label="Next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- CTA -->
+            <div class="products-cta animate-reveal" style="--delay: 0.3s">
+                <a href="products.html" class="btn btn--primary btn--lg" id="cta-view-all">
+                    <span>View All Products</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="section section--alt" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-reveal" style="--delay: 0s">
+                <span class="section__tag">Testimonials</span>
+                <h2 class="section-header__title">What Our Clients<br><span class="gradient-text">Are Saying</span></h2>
+                <div class="section-header__line"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-reveal" style="--delay: 0.1s">
+                    <div class="testimonial-card__quote">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M12 8C10 8 8 10 8 12V20H14V14L12 12V8H12ZM22 8C20 8 18 10 18 12V20H24V14L22 12V8H22Z"
+                                fill="var(--red-200)" />
+                        </svg>
+                        <p>"The quality of refurbished iPhones from Red Cat is unbelievable. They look brand new and the
+                            performance is flawless. Totally recommended!"</p>
+                    </div>
+                    <div class="testimonial-card__author">
+                        <div class="author__img"></div>
+                        <div class="author__info">
+                            <h4 class="author__name">Aniket Sharma</h4>
+                            <p class="author__role">Tech Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-reveal" style="--delay: 0.2s">
+                    <div class="testimonial-card__quote">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M12 8C10 8 8 10 8 12V20H14V14L12 12V8H12ZM22 8C20 8 18 10 18 12V20H24V14L22 12V8H22Z"
+                                fill="var(--red-200)" />
+                        </svg>
+                        <p>"Exceptional after-sales support. I had a small issue with my earbuds, and their team
+                            resolved it within 2 hours. Very professional."</p>
+                    </div>
+                    <div class="testimonial-card__author">
+                        <div class="author__img"></div>
+                        <div class="author__info">
+                            <h4 class="author__name">Priya Mukerjee</h4>
+                            <p class="author__role">Creative Director</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-reveal" style="--delay: 0.3s">
+                    <div class="testimonial-card__quote">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M12 8C10 8 8 10 8 12V20H14V14L12 12V8H12ZM22 8C20 8 18 10 18 12V20H24V14L22 12V8H22Z"
+                                fill="var(--red-200)" />
+                        </svg>
+                        <p>"Red Cat has become our go-to partner for all corporate device requirements. Honest pricing
+                            and consistent quality every time."</p>
+                    </div>
+                    <div class="testimonial-card__author">
+                        <div class="author__img"></div>
+                        <div class="author__info">
+                            <h4 class="author__name">Rahat Sen</h4>
+                            <p class="author__role">IT Head, Global Corp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="faq-wrapper animate-reveal" style="--delay: 0s">
+                <div class="faq__header">
+                    <span class="section__tag">Got Questions?</span>
+                    <h2 class="section-header__title">Frequently Asked<br><span class="gradient-text">Questions</span>
+                    </h2>
+                    <p class="section-header__desc">Everything you need to know about our products and services. Can't
+                        find the answer? Reach out to us.</p>
+                </div>
+
+                <div class="faq__list">
+                    <div class="faq__item active">
+                        <div class="faq__question">
+                            <h3>What is your 42-point quality check?</h3>
+                            <span class="faq__icon"></span>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Our quality check includes a comprehensive inspection of hardware and software. We check
+                                battery health (must be 85%+), screen calibration, button responsiveness, speaker
+                                quality, and network connectivity among other parameters.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <h3>How do I claim my warranty?</h3>
+                            <span class="faq__icon"></span>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Claiming warranty is simple. Log in to your account, select your order, and click 'Claim
+                                Warranty'. Our team will coordinate the pickup of your device within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <h3>Do you offer international shipping?</h3>
+                            <span class="faq__icon"></span>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Currently, we ship across India and select regions in South Asia. We are working on
+                                expanding our global footprint very soon. Stay tuned for updates!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <h3>What is your refurbishment process?</h3>
+                            <span class="faq__icon"></span>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Every device goes through deep cleaning, internal component verification, part
+                                replacement (if necessary with original parts), and rigorous testing before being
+                                certified for sale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER SECTION ===== -->
+    <section class="section newsletter">
+        <div class="newsletter__bg"></div>
+        <div class="container">
+            <div class="newsletter__content animate-reveal">
+                <h2 class="newsletter__title">Ready to Innovation?</h2>
+                <p class="newsletter__desc">Join our community and get exclusive early access to our premium launches
+                    and the latest tech insights.</p>
+
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn--primary">Subscribe Now</button>
+                </form>
+
+                <p class="newsletter__guarantee">We care your privacy. No spam, just pure innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact">
+        <!-- Floating background blobs -->
+        <div class="contact__blob contact__blob--1"></div>
+        <div class="contact__blob contact__blob--2"></div>
+
+        <div class="container">
+            <div class="contact__wrapper">
+                <!-- Left Side: Contact Info -->
+                <div class="contact__info animate-reveal" style="--delay: 0s">
+                    <span class="section__tag">Contact Us</span>
+                    <h2 class="contact__title">Let’s Grow Together</h2>
+                    <p class="contact__subtitle">We care your business and help you scale. Reach out to us for any
+                        queries or collaborations.</p>
+
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="contact__label">Phone</h4>
+                                <p class="contact__text">+91-7003482511</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="contact__label">Email</h4>
+                                <p class="contact__text">redcattechnologyindia@gmail.com</p>
+                                <p class="contact__text">sales@rtppl.in</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="contact__label">Address</h4>
+                                <p class="contact__text">Floor No.: 2nd, Building No./Flat No.: 45261, Building: 23
+                                    Mondalganthi, Road/Street: 12, Block No: G-12, Kol-700052</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="contact__form-container animate-reveal" style="--delay: 0.2s">
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Enter your name"
+                                required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input"
+                                placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" class="form__input form__textarea"
+                                placeholder="How can we help you?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer class="footer" id="footer">
+        <div class="footer__overlay"></div>
+        <div class="container">
+            <div class="footer__main animate-reveal">
+                <!-- Branding -->
+                <div class="footer__brand">
+                    <div class="footer__logo"
+                        style="width: 220px; height: 45px; position: relative; overflow: hidden; display: block; margin: 0;">
+                        <img src="images/logo.png" alt="Red Cat Technology"
+                            style="position: absolute; top: 50%; left: 50%; height: 500px; width: auto; max-width: none; transform: translate(-50%, -50%);">
+                    </div>
+                    <p class="footer__tagline">You are the centre of innovation</p>
+
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer__nav">
+                    <h4 class="footer__nav-title">Quick Links</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="#home" class="footer__nav-link">Home</a></li>
+                        <li><a href="about.html" class="footer__nav-link">About Us</a></li>
+                        <li><a href="about.html#management" class="footer__nav-link">Management</a></li>
+                        <li><a href="products.html" class="footer__nav-link">Products</a></li>
+                        <li><a href="#contact" class="footer__nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect with Us -->
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Connect with Us</h4>
+                    <div class="footer__contact-list">
+                        <div class="footer__contact-item">
+                            <div class="footer__contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="footer__contact-text">
+                                <span class="footer__contact-label">Address</span>
+                                <span class="footer__contact-value">Floor No.: 2nd, Building No./Flat No.: 45261,
+                                    Building: 23 Mondalganthi, Road/Street: 12, Block No: G-12, Kol-700052</span>
+                            </div>
+                        </div>
+                        <div class="footer__contact-item">
+                            <div class="footer__contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="footer__contact-text">
+                                <span class="footer__contact-label">Phone</span>
+                                <span class="footer__contact-value">+91-7003482511</span>
+                            </div>
+                        </div>
+                        <div class="footer__contact-item">
+                            <div class="footer__contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="footer__contact-text">
+                                <span class="footer__contact-label">Email</span>
+                                <a href="mailto:redcattechnologyindia@gmail.com" class="footer__nav-link"
+                                    style="padding:0; font-size: 0.95rem;">redcattechnologyindia@gmail.com</a>
+                                <a href="mailto:sales@rtppl.in" class="footer__nav-link"
+                                    style="padding:0; font-size: 0.95rem;">sales@rtppl.in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__divider"></div>
+                <p class="footer__copyright">@2026 Redcat Technology Product Pvt. Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
