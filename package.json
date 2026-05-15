@@ -1,0 +1,28 @@
+{
+  "name": "redcat-website",
+  "version": "1.0.0",
+  "description": "Redcat Technology Product Pvt. Ltd. - Premium innovation partner for your business",
+  "main": "generate.js",
+  "scripts": {
+    "build:speed-insights": "esbuild src/speed-insights.js --bundle --minify --outfile=dist/speed-insights.min.js",
+    "build": "npm run build:speed-insights",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redcattechnologies1-png/Redcatwebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redcattechnologies1-png/Redcatwebsite/issues"
+  },
+  "homepage": "https://github.com/redcattechnologies1-png/Redcatwebsite#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}

@@ -1,0 +1,5 @@
+# Node modules
+node_modules/
+
+# Build artifacts (Speed Insights bundle is committed as it's needed for deployment)
+# dist/ is intentionally NOT ignored as it contains the production bundle
